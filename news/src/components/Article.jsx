@@ -1,4 +1,6 @@
 export const Article = ({ data }) => {
+  const imgURL =
+    "https://static.vecteezy.com/system/resources/previews/005/337/799/original/icon-image-not-found-free-vector.jpg";
   return (
     // <p>
     //   <a href={data.url}>Click</a>
@@ -13,9 +15,9 @@ export const Article = ({ data }) => {
         <div class="row g-0">
           <div class="col-md-4">
             <img
-              src={data.urlToImage}
+              src={data.urlToImage || imgURL}
               class="img-fluid rounded-start h-100"
-              alt="Not found"
+              alt="Not Found"
             />
           </div>
           <div class="col-md-8">
@@ -23,7 +25,7 @@ export const Article = ({ data }) => {
               <h5 class="card-title text-start">{data.title}</h5>
               <p class="card-text text-start">
                 <small class="text-muted text-start">
-                  By {data.author} on {data.publishedAt}
+                  By {data.author || "Unknown"} on {data.publishedAt}
                 </small>
               </p>
               <p class="card-text text-start">{data.content}</p>
