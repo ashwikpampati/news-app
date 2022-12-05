@@ -1,5 +1,3 @@
-// import { useState } from "react";
-// import Articles from "./Articles.jsx";
 import React from "react";
 
 const Header = (props) => {
@@ -12,7 +10,6 @@ const Header = (props) => {
 
     props.setSearchResults(resultsArray);
   };
-  // console.log(query);
   return (
     <React.Fragment>
       <nav class="navbar bg-light mb-3">
@@ -39,9 +36,4 @@ const Header = (props) => {
   );
 };
 
-// const dailyNews = async () => {
-//   let response = await getNews();
-//   // console.log(response.data);
-// };
-// dailyNews();
 export default Header;
