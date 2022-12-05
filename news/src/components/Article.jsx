@@ -2,14 +2,6 @@ export const Article = ({ data }) => {
   const imgURL =
     "https://static.vecteezy.com/system/resources/previews/005/337/799/original/icon-image-not-found-free-vector.jpg";
   return (
-    // <p>
-    //   <a href={data.url}>Click</a>
-    //   <br></br>
-    //   {data.title}
-    // </p>
-    // <div class="card mb-3" style={{ maxWidth: "740px" }}>
-    //   yes
-    // </div>
     <div class=".justify-content-center">
       <div class="card mx-auto mb-3 " style={{ maxWidth: "820px" }}>
         <div class="row g-0">

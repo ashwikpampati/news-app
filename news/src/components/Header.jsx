@@ -1,10 +1,17 @@
-import { useState } from "react";
-import Articles from "./Articles.jsx";
+// import { useState } from "react";
+// import Articles from "./Articles.jsx";
 import React from "react";
 
-const Header = () => {
-  const [query, setQuery] = useState("");
+const Header = (props) => {
+  const handleSearchChange = (e) => {
+    if (!e.target.value) return props.setSearchResults(props.posts);
 
+    const resultsArray = props.posts.filter((posts) =>
+      posts.title.toLowerCase().includes(e.target.value)
+    );
+
+    props.setSearchResults(resultsArray);
+  };
   // console.log(query);
   return (
     <React.Fragment>
@@ -16,11 +23,18 @@ const Header = () => {
           <input
             type="search"
             placeholder="Search"
-            onChange={(e) => setQuery(e.target.value)}
+            onChange={handleSearchChange}
           />
         </div>
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/fifa">Fifa</a>
+          </li>
+        </ul>
       </nav>
-      <Articles search={query} />
     </React.Fragment>
   );
 };
