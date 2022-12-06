@@ -10,30 +10,6 @@ const Header = (props) => {
 
     props.setSearchResults(resultsArray);
   };
-  // return (
-  //   <React.Fragment>
-  //     <nav class="navbar bg-light mb-3">
-  //       <div class="container-fluid">
-  //         <span class="navbar-brand m-3 fs-2">
-  //           <ion-icon name="newspaper-outline"></ion-icon> NewsApp
-  //         </span>
-  //         <input
-  //           type="search"
-  //           placeholder="Search"
-  //           onChange={handleSearchChange}
-  //         />
-  //       </div>
-  //       <ul>
-  //         <li>
-  //           <Link to="/">Home</Link>
-  //         </li>
-  //         <li>
-  //           <Link to="/fifa">Fifa</Link>
-  //         </li>
-  //       </ul>
-  //     </nav>
-  //   </React.Fragment>
-  // );
 
   return (
     <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
