@@ -1,7 +1,7 @@
 import fetch from "node-fetch";
 
 const URL =
-  "https://newsapi.org/v2/everything?q=fifa&pageSize=15&sortBy=popularity&apiKey=743f80bf9d894e8fa7b43ad4d2a15bdb";
+  "https://newsapi.org/v2/everything?q=fifa&pageSize=15&apiKey=743f80bf9d894e8fa7b43ad4d2a15bdb";
 
 async function getFifaData() {
   const response = await fetch(URL);

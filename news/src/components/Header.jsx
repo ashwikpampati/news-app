@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const Header = (props) => {
   const handleSearchChange = (e) => {
@@ -59,12 +58,32 @@ const Header = (props) => {
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 lead fw-normal">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="/">
-                Home
+                Top Headlines
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/fifa">
                 FIFA
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/business">
+                Business
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/climate">
+                Climate
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/entertainment">
+                Entertainment
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/health">
+                Health
               </a>
             </li>
           </ul>
